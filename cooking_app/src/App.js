@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import Card from './components/Card';                                                                                             
-
+import Card from './components/Card';                                   
 
 const App = () => {
 
@@ -23,7 +22,7 @@ const App = () => {
         {mealsData &&
         mealsData
         .slice(0, 24)
-        .map((meal) => <card key={meal.idMeal} meal={meal}/>)
+        .map((meal) => <Card key={meal.idMeal} meal={meal}/>)
         }
 
       </div>
